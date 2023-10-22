@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(max-width: 480px)" href="style-tamanho1.css">  
+
+	<title>HOME</title>
+  <link rel="icon" href="imagem/favicon-32x32.png" sizes="32x32">
+	<style type="text/css">
+
+
+
+
+    div{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #mode {
+      width: 30px;
+      border-radius: 2px;
+    }
+
+
+  
+
+
+	@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+      * {
+                margin: 0; 
+                padding: 0;  
+                box-sizing: border-box; 
+               text-decoration: none;
+              }
+
+      body{
+        font-size: 100%;
+        color: #FFF2EF;
+        background: #ffe6f4;
+        font-family: arial, helvetica, sans-serif;
+      }
+
+	      .cabecalho { 
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: space-around;
+             padding: 24px;
+
+            }
+
+      .logo{
+      margin-top: 20% ;
+      margin-left: 13% ;
+      float: left ;
+      animation: animacao1 10s;
+      width: 50%
+
+      -webkit-animation: animacao1 10s;
+      -ms-animation: animacao1 10s;
+      -o-animation: animacao1 10s;
+
+    }
+
+    .logo:hover{
+
+    }
+
+    @keyframes animacao1{
+      from{
+        opacity: 0;
+      }
+      to{
+        opacity: 1;
+      }
+    }
+    
+    
+        .menu{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 1.2em;         
+          font-family: Sarala, sans-serif;
+          color: #8338ec;
+          background-color: black;
+          width: calc(100vw-padding);
+
+       }
+
+       .menu span {
+        margin-right: 1.2em;
+      }
+
+       .conteudo{
+        border-color: #FFF2EF;
+         border-top: 0,4px solid #FFF2EF;
+         margin-bottom: 48px;
+
+       }
+
+       .principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+
+       }
+
+       .text{
+        display: flex;
+        flex-direction:column ;
+        gap: 32 px;
+       }
+        
+        .title{
+          font-family: 'righteous', cursive;
+          font-weight: 400;
+          font-size: 64px;
+          color: #f269aa;
+
+        }
+
+
+        .t2{
+          font-family: 'righteous', cursive;
+          font-weight: 400;
+          font-size: 64px;
+          color: #a44a81;
+        }
+
+        .subt{
+          font-family: 'Sarala', sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          color: lightblue;
+        }
+
+        .botao{
+          background-color:#FFB6C1;
+          width: 180px;
+          height: 60px;
+          border: none;
+          box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25) ;
+          border-radius: 20px;
+          font-family: 'Sarala', sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          color: lightblue;
+          text-decoration: none;
+
+
+        }
+
+
+        .img1{
+          height: 430px;
+          border-radius: 500px;
+        
+        }
+
+
+
+        .conteudo2{
+          display: flex;
+          flex-direction: column;
+          align-items: center ;
+          gap: 24px;
+          margin-top: 18px;
+
+        }
+
+        .title2{
+          border-top: 0.4 solid #FFF2EF;
+          padding-top: 18px ;
+          font-family: 'righteous', cursive;
+          font-weight: 400;
+          font-size: 24px;
+          color: white;
+          margin-bottom:16 px ;
+          text-align: center;
+        }
+
+        .text2{
+          font-family: 'Sarala', sans-serif;
+          font-weight: 400;
+          font-size: 24px;
+          color: lightblue;
+          text-align: center;
+        }
+
+        .modo{
+          color: purple;
+        }
+
+        .rodape{
+          padding: 32px;
+          border-top: 0.4 solid #FFF2EF;
+
+
+    }
+    .rodapeimg{
+      height: 48px;
+      display: block;
+      margin: 0 auto;
+
+    }
+
+    
+
+  
+   @media (min-width: 320px) and (max-width: 480px)  {
+        .menu {
+          flex-direction: column;  
+          font-size: 0.3em;
+        }
+
+        section {
+        
+          font-size: 0.3em;
+        }            
+      }   
+
+      @media (min-width: 481px) and (max-width: 767px)  {
+        .menu {
+          flex-direction: column;  
+          font-size: 0.7em;
+        }
+
+        section {
+          
+          font-size: 0.7em; 
+        }            
+      }      
+
+      
+      @media (min-width: 768px) and (max-width: 1024px)  {
+        .menu {
+          flex-direction: column;  
+          font-size: 0.8em;
+        }
+
+        section {
+                    font-size: 0.8em;       
+        }        
+      }         
+    
+    .menu{
+      display: none;
+    }
+      }
+
+      a:link {
+      text-decoration: none;
+      color: #8338ec; 
+
+	</style>
+
+  <script type="text/javascript">
+    
+
+  function alteraCor(){
+  if(document.getElementById("mode").value == 0){
+
+
+    document.getElementById("pagina").style.backgroundColor = "#ffe6f4";
+    
+  }
+  else if (document.getElementById("mode").value == 1){
+    document.getElementById("pagina").style.backgroundColor = "black";
+    document.getElementById("pagina").style.color = "purple";
+}
+}
+  </script>
+
+
+
+
+
+</head>
+<body>
+  
+ <body id="pagina">
+ 
+<nav class="navbar navbar-expand-lg bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Donation People</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="doacoes.html">Doações</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="cadastrodoacoes.html">Doar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+        </li>
+        </li>
+      </ul>
+
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+<main class="conteudo">
+  <section class="principal">
+    <div class="text">
+      <h1 class="title">Mais que doar:<br> <h1 class="t2">Transformar!</h1> <br>
+      <h2 class="subt">Você tem o poder para mudar a vida de alguém <br>em poucos minutos! Doe ainda hoje!<br>
+        Toda ajuda importa!</h2> <br><br>
+      <button class="botao"><a href="anuncio.html" >Confira</a></button>
+  </div>
+   <img src="img1.jpg" class="img1" width: 30%;>
+  </section>
+  
+  <section class="conteudo2">
+    <div>
+
+      <p class="text2">Generosidade não é apenas uma ação, é sim uma virtude que beneficia a todos.
+Aqui na Donation People temos o propósito de fortalecer a generosidade e a cultura de doações.</p>
+
+
+    </div>
+
+  </section>
+
+</main>
+
+<hr>
+ 
+
+ 
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<img src="local.jpeg" class="card-img-top" alt="...">
+
+  
+
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="(max-width: 480px)" href="style-tamanho1.css">  
+  <link rel="stylesheet" href="1html.css">
+  <title>Cadastro de Doações</title>
+  <link rel="icon" href="imagem/favicon-32x32.png" sizes="32x32">
+
+  <style type="text/css">
+
+    div{
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    #mode {
+      width: 30px;
+      border-radius: 2px;
+    }
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+      * {
+                margin: 0; 
+                padding: 0;  
+                box-sizing: border-box; 
+               text-decoration: none;
+              }
+
+      body{
+        font-size: 100%;
+        color: #FFF2EF;
+        background: #ffe6f4;
+        font-family: arial, helvetica, sans-serif;
+      }
+
+        .cabecalho { 
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: space-around;
+             padding: 24px;
+
+            }
+
+        .menu{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 1.2em;         
+          font-family: Sarala, sans-serif;
+          color: #8338ec;
+          background-color: black;
+          width: calc(100vw-padding);
+
+       }
+
+       .menu span {
+        margin-right: 1.2em;
+      }
+
+
+    .menu{
+      display: none;
+    }
+      }
+
+      a:link {
+      text-decoration: none;
+      color: #8338ec; 
+     }
+
+   
+   
+   main {
+    color: hotpink;
+   }
+
+   .categoria{
+    padding-right: 340px;
+   }
+
+   .campo {
+      margin: 0.6rem 0 ;
+      padding: 0.8rem 1.2rem;
+      flex-direction: column;
+      border-color: white;
+   }
+
+   .campo input {
+      border: none;
+      border-radius: 6px;
+      box-shadow: 1px 1px 4px #FFB6C1;
+      flex-direction: column;
+      width: 370px;
+   }
+
+   select{
+    width: 140px;
+   }
+  
+  button {
+    background-color: hotpink;
+  }
+
+  .cep{
+    width: 140px;
+  }
+
+  </style>
+
+</head>
+  
+<body id="pagina">
+ 
+<nav class="navbar navbar-expand-lg bg-light ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Donation People</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="doacoes.html">Doações</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="cadastrodoacoes.html">Doar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="login.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+        </li>
+        </li>
+      </ul>
+
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-dark" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<h1 class="titulo">Cadastro da Doação</h1>
+
+<main>
+        <form id="image-upload-form" enctype="multipart/form-data">
+
+          <div class="campo">
+          <b>Titulo:</b>
+          <input type="text" name="titulo" placeholder="Ex.: O Pequeno Principe">
+          <br>
+          
+
+         
+                <label for="image">Escolha uma imagem:</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+            <br>
+
+            
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="2" required placeholder="Ex.: Livro O Pequeno Principe. Disponivel para doãção, se alguem quiser só me procurar. Obs.: Não entrego."></textarea>
+            <br>
+
+      <b>CEP:</b>
+      <input class="cep" type="text" name="cep" placeholder="Ex.: 00000-00">
+
+      </div>
+      <br><br>
+      
+      <button type="submit"><b>Cadastrar</b></button>
+    </form>
+  </main>
+
+</body>
+</html>
